@@ -67,6 +67,7 @@
 # Quartus
 **/incremental_db/*
 **/db/*
+**/Lab1_led_sys/*
 **/greybox_tmp/*
 **/output_files/*
 **/obj/*
@@ -106,3 +107,4 @@
 
 # Signal taps
 *.stp
+
