@@ -1,5 +1,5 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate C:\Users\frkanaan\Documents\TP_ESN11\main\Kanaan_Lab1\Lab1_led_sys.qsys --block-symbol-file --output-directory=C:\Users\frkanaan\Documents\TP_ESN11\main\Kanaan_Lab1\Lab1_led_sys --family="MAX 10" --part=10M50DAF484C7G
+Info: qsys-generate E:\UCA_classes\GE5B\S9\ESN11\Kanaan_Lab1\Kanaan_Lab1\Lab1_led_sys.qsys --block-symbol-file --output-directory=E:\UCA_classes\GE5B\S9\ESN11\Kanaan_Lab1\Kanaan_Lab1\Lab1_led_sys --family="MAX 10" --part=10M50DAF484C7G
 Progress: Loading Kanaan_Lab1/Lab1_led_sys.qsys
 Progress: Reading input file
 Progress: Adding clk_0 [clock_source 18.1]
@@ -14,17 +14,20 @@ Progress: Adding pio_0 [altera_avalon_pio 18.1]
 Progress: Parameterizing module pio_0
 Progress: Adding pio_1 [altera_avalon_pio 18.1]
 Progress: Parameterizing module pio_1
+Progress: Adding pio_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_2
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
 Info: Lab1_led_sys.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: Lab1_led_sys.pio_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Lab1_led_sys.pio_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate C:\Users\frkanaan\Documents\TP_ESN11\main\Kanaan_Lab1\Lab1_led_sys.qsys --synthesis=VHDL --output-directory=C:\Users\frkanaan\Documents\TP_ESN11\main\Kanaan_Lab1\Lab1_led_sys\synthesis --family="MAX 10" --part=10M50DAF484C7G
+Info: qsys-generate E:\UCA_classes\GE5B\S9\ESN11\Kanaan_Lab1\Kanaan_Lab1\Lab1_led_sys.qsys --synthesis=VHDL --output-directory=E:\UCA_classes\GE5B\S9\ESN11\Kanaan_Lab1\Kanaan_Lab1\Lab1_led_sys\synthesis --family="MAX 10" --part=10M50DAF484C7G
 Progress: Loading Kanaan_Lab1/Lab1_led_sys.qsys
 Progress: Reading input file
 Progress: Adding clk_0 [clock_source 18.1]
@@ -39,51 +42,60 @@ Progress: Adding pio_0 [altera_avalon_pio 18.1]
 Progress: Parameterizing module pio_0
 Progress: Adding pio_1 [altera_avalon_pio 18.1]
 Progress: Parameterizing module pio_1
+Progress: Adding pio_2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_2
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
 Info: Lab1_led_sys.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: Lab1_led_sys.pio_1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Lab1_led_sys.pio_2: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Info: Lab1_led_sys: Generating Lab1_led_sys "Lab1_led_sys" for QUARTUS_SYNTH
 Info: jtag_uart_0: Starting RTL generation for module 'Lab1_led_sys_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Lab1_led_sys_jtag_uart_0 --dir=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0002_jtag_uart_0_gen//Lab1_led_sys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Lab1_led_sys_jtag_uart_0 --dir=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0022_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0022_jtag_uart_0_gen//Lab1_led_sys_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart_0: Done RTL generation for module 'Lab1_led_sys_jtag_uart_0'
 Info: jtag_uart_0: "Lab1_led_sys" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: nios2_gen2_0: "Lab1_led_sys" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'Lab1_led_sys_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Lab1_led_sys_onchip_memory2_0 --dir=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0003_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0003_onchip_memory2_0_gen//Lab1_led_sys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Lab1_led_sys_onchip_memory2_0 --dir=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0023_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0023_onchip_memory2_0_gen//Lab1_led_sys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2_0: Done RTL generation for module 'Lab1_led_sys_onchip_memory2_0'
 Info: onchip_memory2_0: "Lab1_led_sys" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: pio_0: Starting RTL generation for module 'Lab1_led_sys_pio_0'
-Info: pio_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab1_led_sys_pio_0 --dir=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0004_pio_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0004_pio_0_gen//Lab1_led_sys_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab1_led_sys_pio_0 --dir=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0024_pio_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0024_pio_0_gen//Lab1_led_sys_pio_0_component_configuration.pl  --do_build_sim=0  ]
 Info: pio_0: Done RTL generation for module 'Lab1_led_sys_pio_0'
 Info: pio_0: "Lab1_led_sys" instantiated altera_avalon_pio "pio_0"
 Info: pio_1: Starting RTL generation for module 'Lab1_led_sys_pio_1'
-Info: pio_1:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab1_led_sys_pio_1 --dir=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0005_pio_1_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0005_pio_1_gen//Lab1_led_sys_pio_1_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_1:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab1_led_sys_pio_1 --dir=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0025_pio_1_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0025_pio_1_gen//Lab1_led_sys_pio_1_component_configuration.pl  --do_build_sim=0  ]
 Info: pio_1: Done RTL generation for module 'Lab1_led_sys_pio_1'
 Info: pio_1: "Lab1_led_sys" instantiated altera_avalon_pio "pio_1"
+Info: pio_2: Starting RTL generation for module 'Lab1_led_sys_pio_2'
+Info: pio_2:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab1_led_sys_pio_2 --dir=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0026_pio_2_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0026_pio_2_gen//Lab1_led_sys_pio_2_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_2: Done RTL generation for module 'Lab1_led_sys_pio_2'
+Info: pio_2: "Lab1_led_sys" instantiated altera_avalon_pio "pio_2"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "Lab1_led_sys" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "Lab1_led_sys" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "Lab1_led_sys" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'Lab1_led_sys_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA/18.1/quartus/bin64//perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Lab1_led_sys_nios2_gen2_0_cpu --dir=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0008_cpu_gen/ --quartus_bindir=C:/intelFPGA/18.1/quartus/bin64/ --verilog --config=C:/Users/frkanaan/AppData/Local/Temp/alt9366_6256354371562359142.dir/0008_cpu_gen//Lab1_led_sys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2023.01.09 16:52:53 (*) Starting Nios II generation
-Info: cpu: # 2023.01.09 16:52:53 (*)   Checking for plaintext license.
-Info: cpu: # 2023.01.09 16:52:56 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA/18.1/quartus/bin64/
-Info: cpu: # 2023.01.09 16:52:56 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2023.01.09 16:52:56 (*)   Plaintext license not found.
-Info: cpu: # 2023.01.09 16:52:56 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2023.01.09 16:52:56 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2023.01.09 16:52:56 (*)   Creating all objects for CPU
-Info: cpu: # 2023.01.09 16:52:57 (*)   Generating RTL from CPU objects
-Info: cpu: # 2023.01.09 16:52:57 (*)   Creating plain-text RTL
-Info: cpu: # 2023.01.09 16:52:57 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Lab1_led_sys_nios2_gen2_0_cpu --dir=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0029_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/Fredie/AppData/Local/Temp/alt9369_4320745357331086356.dir/0029_cpu_gen//Lab1_led_sys_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.01.12 21:01:22 (*) Starting Nios II generation
+Info: cpu: # 2023.01.12 21:01:22 (*)   Checking for plaintext license.
+Info: cpu: # 2023.01.12 21:01:23 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2023.01.12 21:01:23 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2023.01.12 21:01:23 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2023.01.12 21:01:23 (*)   Plaintext license not found.
+Info: cpu: # 2023.01.12 21:01:23 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2023.01.12 21:01:23 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.01.12 21:01:23 (*)   Creating all objects for CPU
+Info: cpu: # 2023.01.12 21:01:24 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.01.12 21:01:24 (*)   Creating plain-text RTL
+Info: cpu: # 2023.01.12 21:01:25 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'Lab1_led_sys_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -97,9 +109,9 @@ Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "c
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: Reusing file C:/Users/frkanaan/Documents/TP_ESN11/main/Kanaan_Lab1/Lab1_led_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: Reusing file E:/UCA_classes/GE5B/S9/ESN11/Kanaan_Lab1/Kanaan_Lab1/Lab1_led_sys/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: Lab1_led_sys: Done "Lab1_led_sys" with 23 modules, 35 files
+Info: Lab1_led_sys: Done "Lab1_led_sys" with 24 modules, 36 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 10M50DAF484C7G
 set_global_assignment -name TOP_LEVEL_ENTITY Lab1_led_sys
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:47:04  JANUARY 04, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.1 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -83,4 +83,6 @@ set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to reset_rese
 set_location_assignment PIN_A7 -to reset_reset_n
 set_location_assignment PIN_P11 -to clk_clk
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_clk
+set_location_assignment PIN_B8 -to pio_2_external_connection_export
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to pio_2_external_connection_export
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
