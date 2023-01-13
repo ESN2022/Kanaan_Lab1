@@ -105,7 +105,7 @@ static void irq_speed_handler(void *context, alt_u32 id)
 
 static void irq_start_trigger(void *context, alt_u32 id)
 {
-	pb_flag = (alt_u8)IORD_ALTERA_AVALON_PIO_DATA(PIO_2_BASE); // sleep time controlled by SW0 through SW3	// sleep time controled by SW0 through SW3
+	pb_flag = (alt_u8)IORD_ALTERA_AVALON_PIO_DATA(PIO_2_BASE); // sleep time controlled by SW0 through SW3	// sleep time controlled by SW0 through SW3
 
 	/* Reset the edge capture register. */
 	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(PIO_2_BASE, 0x0);
