@@ -364,7 +364,7 @@
    version="18.1"
    enabled="1">
   <parameter name="allowInSystemMemoryContentEditor" value="false" />
-  <parameter name="autoInitializationFileName">$${FILENAME}_onchip_memory2_0</parameter>
+  <parameter name="autoInitializationFileName">Lab1_led_sys_onchip_memory2_0</parameter>
   <parameter name="blockType" value="AUTO" />
   <parameter name="copyInitFile" value="false" />
   <parameter name="dataWidth" value="32" />
@@ -375,8 +375,8 @@
   <parameter name="ecc_enabled" value="false" />
   <parameter name="enPRInitMode" value="false" />
   <parameter name="enableDiffWidth" value="false" />
-  <parameter name="initMemContent" value="false" />
-  <parameter name="initializationFileName" value="onchip_mem.hex" />
+  <parameter name="initMemContent" value="true" />
+  <parameter name="initializationFileName">E:/UCA_classes/GE5B/S9/ESN11/Kanaan_Lab1/software/app/onchip_mem.hex</parameter>
   <parameter name="instanceID" value="NONE" />
   <parameter name="memorySize" value="40000" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
@@ -386,7 +386,7 @@
   <parameter name="singleClockOperation" value="false" />
   <parameter name="slave1Latency" value="1" />
   <parameter name="slave2Latency" value="1" />
-  <parameter name="useNonDefaultInitFile" value="false" />
+  <parameter name="useNonDefaultInitFile" value="true" />
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>

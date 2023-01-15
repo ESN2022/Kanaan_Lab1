@@ -36,6 +36,9 @@ module Lab1_led_sys_onchip_memory2_0 (
                                      )
 ;
 
+  parameter INIT_FILE = "E:/UCA_classes/GE5B/S9/ESN11/Kanaan_Lab1/software/app/onchip_mem.hex";
+
+
   output  [ 31: 0] readdata;
   input   [ 13: 0] address;
   input   [  3: 0] byteenable;
@@ -66,7 +69,7 @@ wire             wren;
     );
 
   defparam the_altsyncram.byte_size = 8,
-           the_altsyncram.init_file = "UNUSED",
+           the_altsyncram.init_file = INIT_FILE,
            the_altsyncram.lpm_type = "altsyncram",
            the_altsyncram.maximum_depth = 10000,
            the_altsyncram.numwords_a = 10000,

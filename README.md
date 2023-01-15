@@ -43,7 +43,7 @@ However, once that technical aspect was mastered, it felt quite simple to go on 
 
 ## Pitfalls & Solutions
 Pitfalls included simple things such as :
-- Setting RAM amount to 4 KB instead of 4 MB (the system will not work), and then testing with large values such as 40 MB (analysis & elaboration will take a very long time to finish, not to mention that this amount far exceeds our need);
+- Setting RAM amount to 4 KB instead of 40 KB (the system will not work), and then testing with large values such as 40 MB (analysis & elaboration will take a very long time to finish, not to mention that this amount far exceeds our need);
 - Forgetting to export the needed pins (which will make pin planner not show any exported pins);
 - Generating app, HAL, and BSP files in the same directory which is a bad practice as it can squash your files;
 - Forgetting to set some variable to *volatile* type in *main.c*. This will make interrupts not work.
