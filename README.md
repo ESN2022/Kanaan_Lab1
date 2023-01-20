@@ -29,7 +29,11 @@ I should also note a few more things concering this system :
 - 4000 KB of RAM were used to make sure system works without runnning out of memory.
 
 ## Progress and Results
-Both the polling and interrupt modes work as intended : in both modes we have a LED chaser that goes back and forth indefinetly. We were able to trigger the system with KEY0 and reset it with KEY1. In addition, were able to have the 16 intended speeds that control the LED chaser.
+Polling mode work as intended : we have a LED chaser that goes back and forth indefinetly. We were able to trigger the system with KEY0 and reset it with KEY1. In addition, were able to have the 16 intended speeds that control the LED chaser.
+
+https://drive.google.com/file/d/1GnVSLV1S4aq_zYw0Yclakiim9D6D1Ger/view?usp=share_link
+
+Interrupt method is not working. 
 
 # C Conclusion: 
 ## What we learned
