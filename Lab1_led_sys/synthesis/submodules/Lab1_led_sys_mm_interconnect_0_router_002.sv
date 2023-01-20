@@ -1,4 +1,4 @@
-// (C) 2001-2018 Intel Corporation. All rights reserved.
+// (C) 2001-2019 Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions and other 
 // software and tools, and its AMPP partner logic functions, and any output 
 // files from any of the foregoing (including device programming or simulation 
@@ -24,9 +24,9 @@
 // agreement for further details.
 
 
-// $Id: //acds/rel/18.1std/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
+// $Id: //acds/rel/19.1std/ip/merlin/altera_merlin_router/altera_merlin_router.sv.terp#1 $
 // $Revision: #1 $
-// $Date: 2018/07/18 $
+// $Date: 2018/11/07 $
 // $Author: psgswbuild $
 
 // -------------------------------------------------------
@@ -163,11 +163,6 @@ module Lab1_led_sys_mm_interconnect_0_router_002
 
 
 
-    // -------------------------------------------------------
-    // Write and read transaction signals
-    // -------------------------------------------------------
-    wire read_transaction;
-    assign read_transaction  = sink_data[PKT_TRANS_READ];
 
 
     Lab1_led_sys_mm_interconnect_0_router_002_default_decode the_default_decode(
@@ -190,11 +185,7 @@ module Lab1_led_sys_mm_interconnect_0_router_002
 
 
         if (destid == 0 ) begin
-            src_channel = 6'b01;
-        end
-
-        if (destid == 1  && read_transaction) begin
-            src_channel = 6'b10;
+            src_channel = 6'b1;
         end
 
 
