@@ -28,6 +28,10 @@ I should also note a few more things concering this system :
 - PIO1 and PIO2 have the 'Generate IRQ' option ticked. This is done to enable interrupt mode for each;
 - 4000 KB of RAM were used to make sure system works without runnning out of memory.
 
+The following screenshot shows our qsys design :
+![image](https://user-images.githubusercontent.com/114091388/213661577-cde3af3a-39e1-4a04-b114-edb81f0fd566.png)
+
+
 ## Progress and Results
 Polling mode work as intended : we have a LED chaser that goes back and forth indefinetly. We were able to trigger the system with KEY0 and reset it with KEY1. In addition, were able to have the 16 intended speeds that control the LED chaser.
 
