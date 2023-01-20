@@ -42,7 +42,7 @@ Interrupt method is not working.
 # C Conclusion: 
 ## What we learned
 This lab tough me how to implement the concept of the LED chaser using *C* instead of *VHDL*.
-I also learned how to use *Platform Desginer* aswell as *Pin Planner* and generate HAL and BSP. In addition, I learned how to use HAL functions to changes the state some of the PIOs. Furthermore, I learned how to implement ISRs.
+I also learned how to use *Platform Desginer* aswell as *Pin Planner* and generate HAL and BSP. In addition, I learned how to use HAL functions to changes the state some of the PIOs. Furthermore, I learned how to implement ISRs (at least in principle).
 
 ## Comment Progress
 The implementation of this was once step at a time : first we learned how to take our design on paper to simply toggle a single LED.
